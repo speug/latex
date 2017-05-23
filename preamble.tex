@@ -1,0 +1,43 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[finnish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{epstopdf}
+\usepackage{gensymb}
+\usepackage{subcaption}
+\usepackage{color}			
+\usepackage{listings}
+\usepackage{setspace}
+\usepackage{amssymb}
+\usepackage{epstopdf}
+\usepackage{enumitem}
+\usepackage[parfill]{parskip}
+
+\newcommand{\pd}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\bra}[1]{\left\langle #1 \right|}
+\newcommand{\ket}[1]{\left| #1 \right\rangle}
+\newcommand{\braket}[2]{\left\langle #1 \big| #2 \right\rangle}
+
+
+\begingroup\lccode`~=`!
+\lowercase{\endgroup\def~}#1{_{\mathrm{#1}}}
+\mathchardef\exclam=\mathcode`!
+\AtBeginDocument{\mathcode`!=\string"8000 }
+
+\usepackage{xspace}
+\def\mum{\ensuremath{\upmu \mathrm{m} \xspace}}
+%\usepackage[]{mcode}
+%\lstset{
+%	literate = {ö}{{\"o}}1
+%			{ä}{{\"a}}1
+%			{€}{{\euro}}1
+%} 
+
+\begin{document}
+\begin{equation}
+\braket{\psi!1}{\psi!2} = \pd{x}{t}
+\end{equation}
+\end{document}
