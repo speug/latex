@@ -16,17 +16,20 @@
 \usepackage{enumitem}
 \usepackage[parfill]{parskip}
 
+%partial derivative
 \newcommand{\pd}[2]{\frac{\partial #1}{\partial #2}}
+%bra-ket notation
 \newcommand{\bra}[1]{\left\langle #1 \right|}
 \newcommand{\ket}[1]{\left| #1 \right\rangle}
 \newcommand{\braket}[2]{\left\langle #1 \big| #2 \right\rangle}
 
-
+%upright subscripts
 \begingroup\lccode`~=`!
 \lowercase{\endgroup\def~}#1{_{\mathrm{#1}}}
 \mathchardef\exclam=\mathcode`!
 \AtBeginDocument{\mathcode`!=\string"8000 }
 
+%uprigth mu (or any greek letter)
 \usepackage{xspace}
 \def\mum{\ensuremath{\upmu \mathrm{m} \xspace}}
 %\usepackage[]{mcode}
